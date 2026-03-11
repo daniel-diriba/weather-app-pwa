@@ -29,6 +29,12 @@ html, body, #root {
     background: rgba(250, 250, 250, 0.85);
 }
 
+.error {
+    color: #ff6b6b;
+    margin-bottom: 1rem;
+    text-transform: none;
+}
+
 .city {
     display: flex;
     align-items: center;
