@@ -21,8 +21,13 @@ const App = () => {
         }
     };
 
+    const bgUrl = `${process.env.PUBLIC_URL || ''}/images/bg.jpg`;
+    const bgStyle = {
+        backgroundColor: '#0a1f44',
+        background: `linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418) ), url(${bgUrl})`,
+    };
     return (
-        <div className="main-container">
+        <div className="main-container" style={bgStyle}>
             <input
                 type="text"
                 className="search"
